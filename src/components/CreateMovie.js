@@ -1,15 +1,15 @@
-import React from 'react';
+import React from "react";
 
-const CreateMovie = ({ onChangeForm, createMovie }) => {
+const CreateMovies = ({ onChangeForm, createMovie }) => {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-7 mrgnbtm">
-          <h2 style={{ backgroundColor: 'lightgray'}}>Create Movie</h2>
+        <div className="p-3 mb-2 bg-dark text-white col-md-7 mrgnbtm">
+          <h2>Create Movies</h2>
           <form>
             <div className="row">
-              <div className="form-group col-md-6">
-                <label htmlFor="exampleInputEmail1" style={{ backgroundColor: 'lightgray' }}>Title</label>
+              <div className="form-group col-md-10">
+                <label htmlFor="exampleInputEmail1">Title</label>
                 <input
                   type="text"
                   onChange={(e) => onChangeForm(e)}
@@ -20,8 +20,10 @@ const CreateMovie = ({ onChangeForm, createMovie }) => {
                   placeholder="Title"
                 />
               </div>
-              <div className="form-group col-md-6">
-                <label htmlFor="exampleInputPassword1" style={{ backgroundColor: 'lightgray' }}>Genre</label>
+            </div>
+            <div className="row">
+              <div className="form-group col-md-10">
+                <label htmlFor="exampleInputPassword1">Genre</label>
                 <input
                   type="text"
                   onChange={(e) => onChangeForm(e)}
@@ -33,8 +35,8 @@ const CreateMovie = ({ onChangeForm, createMovie }) => {
               </div>
             </div>
             <div className="row">
-              <div className="form-group col-md-6">
-                <label htmlFor="exampleInputEmail1" style={{ backgroundColor: 'lightgray' }}>Director</label>
+              <div className="form-group col-md-10">
+                <label htmlFor="exampleInputEmail1">Director</label>
                 <input
                   type="text"
                   onChange={(e) => onChangeForm(e)}
@@ -45,33 +47,33 @@ const CreateMovie = ({ onChangeForm, createMovie }) => {
                   placeholder="Director"
                 />
               </div>
-              <div className="form-group col-md-6">
-                <label htmlFor="exampleInputPassword1" style={{ backgroundColor: 'lightgray' }}>Release Year</label>
+            </div>
+            <div className="row">
+              <div className="form-group col-md-10">
+                <label htmlFor="exampleInputEmail1">Release</label>
                 <input
                   type="text"
                   onChange={(e) => onChangeForm(e)}
                   className="form-control"
                   name="release_year"
                   id="release_year"
-                  placeholder="Release Year"
+                  aria-describedby="emailHelp"
+                  placeholder="Release"
                 />
               </div>
             </div>
             <button
               type="button"
               onClick={(e) => createMovie()}
-              className="btn btn-danger">
+              className="btn btn-warning"
+            >
               Create
             </button>
-            
           </form>
-
-          <br></br>
-          
         </div>
       </div>
     </div>
   );
 };
 
-export default CreateMovie;
+export default CreateMovies;

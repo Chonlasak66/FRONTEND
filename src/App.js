@@ -70,7 +70,7 @@ useEffect(() => {
 }
 
    return (
-    <div className="App" style={{backgroundImage: 'url("/images/car.jpg")', backgroundSize: 'cover', minHeight: '100vh'}}>
+    <div className="App" >
       <Header></Header>
       <div className="container mrgnbtm">
         <div className="row">
@@ -80,7 +80,7 @@ useEffect(() => {
               onChangeForm={onChangeForm}
               createMovie={movieCreate}
             >
-            </CreateMovie>
+            </CreateMovie> 
             <div className="col-md-8">
             <SearchPage
               setMovies={setMovies}

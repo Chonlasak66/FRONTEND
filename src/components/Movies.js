@@ -22,9 +22,9 @@
 
         return(
             <div className="container">
-                <div className="row mrgnbtm"><h2 style={{ backgroundColor: 'lightgray' }}>Movies</h2></div>
-                <table className="table table-bordered" style={{ backgroundColor: 'lightgray' }}>
-                    <thead>
+                <div className="row mrgnbtm"><h2>Movies</h2></div>
+                <table className="table table-dark table-striped">
+                 <thead className="table-dark">
                     <tr>
                         <th>Movie Id</th>
                         <th>Title</th>

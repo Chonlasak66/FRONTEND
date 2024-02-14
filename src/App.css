@@ -22,3 +22,14 @@
 .mrgnbtm {
   margin-top: 20px;
 }
+body{
+  background-color: #222831;
+}
+h2 {
+  background-color: #00adb5;
+  color: #eeeeee;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+}
