@@ -3,8 +3,8 @@ import React from 'react'
 export const DisplayBoard = ({numberOfMovies, getAllMovies}) => {
 
     return(
-        <div style={{backgroundColor:'green'}} className="display-board">
-            <h4 style={{color: 'white'}}>Movies Created</h4>
+        <div style={{backgroundColor:"#393E46"}} className="display-board">
+            <h2 style={{color: 'white'}}>Movies Created</h2>
             <div className="number">
             {numberOfMovies}
             </div>
